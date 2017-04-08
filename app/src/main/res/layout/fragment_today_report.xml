@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zye37.capstone.ProgressView$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/IconExercises"
+        android:src="@drawable/progress"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/HomeButton"
+        android:src="@drawable/ic_home_black_24dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:id="@+id/BackArrow"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="295dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Thomas's Virtual Mobility"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Today Report"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IconExercises"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:id="@+id/ROM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Range Of Motion"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/IconExercises"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_Flexion"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:text="Flexion"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/FlexionROM_Percentage"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:text="70"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/Flexion_progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+
+                        android:progress="70"
+                        android:progressTint="@color/button_background" />
+                </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/IconExercises"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_Extension"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:text="Extension"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/ExtensionROM_Percentage"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="40"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/Extension_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+
+                android:progress="40"
+                android:progressTint="@color/button_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/IconExercises"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_LateralFlexion"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:text="Lateral Flexion"
+                    android:textColor="@android:color/black"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/LateralFlexionROM_Percentage"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="18"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/LateralFlexion_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+
+                android:progress="18"
+                android:progressTint="@color/button_background" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

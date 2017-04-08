@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Capstone</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity__your_exercises">Activity_YourExercises</string>
+    <string name="title_activity_flexion_exercises">FlexionExercises</string>
+    <string name="title_activity_standing_lumbar_flexion">StandingLumbarFlexion</string>
+    <string name="title_activity_view_progress">ViewProgress</string>
+    <string name="title_activity_progress_view">ProgressView</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_ptpatient_list">PTPatientList</string>
+    <string name="title_activity_patient_thomas">PatientThomas</string>
+    <string name="title_activity_your_pt">yourPT</string>
+    <string name="title_activity_your_profile">YourProfile</string>
+</resources>

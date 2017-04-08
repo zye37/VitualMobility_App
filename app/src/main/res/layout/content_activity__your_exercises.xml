@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.zye37.capstone.Activity_YourExercises"
+    tools:showIn="@layout/activity__your_exercises">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/IconExercises"
+        android:src="@drawable/your_exercises"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/HomeButton"
+        android:src="@drawable/ic_home_black_24dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Thomas's Virtual Mobility"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="YOUR EXERCISES"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Flexion Exercises"
+            android:textSize="20dp"
+            android:id="@+id/Flexion"
+            android:layout_marginBottom="20dp"
+            android:background="@color/button_background"
+            android:textColor="@color/button_text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Extension Exercises"
+            android:id="@+id/Extension"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/button_background"
+            android:textColor="@color/button_text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Lateral Flexsion Exercises"
+            android:id="@+id/LateralFlexion"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/button_background"
+            android:textColor="@color/button_text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Other Exercises"
+            android:id="@+id/Others"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/button_background"
+            android:textColor="@color/button_text"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
