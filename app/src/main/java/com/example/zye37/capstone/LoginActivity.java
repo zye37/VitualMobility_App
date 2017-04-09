@@ -3,6 +3,7 @@ package com.example.zye37.capstone;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -61,6 +62,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,6 +144,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
      * Attempts to sign in or register the account specified by the login form.
      * If there are form errors (invalid email, missing fields, etc.), the
      * errors are presented and no actual login attempt is made.
+     * @TODO create authorization for log-in
      */
     private void attemptLogin() {
         if (mAuthTask != null) {
@@ -186,7 +189,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             // perform the user login attempt.
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
+
+
             mAuthTask.execute((Void) null);
+            Intent toHome = new Intent(LoginActivity.this,Home.class );
+            startActivity(toHome);
         }
     }
 

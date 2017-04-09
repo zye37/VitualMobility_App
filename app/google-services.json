@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "646204392634",
+    "firebase_url": "https://vitualmobilityapp.firebaseio.com",
+    "project_id": "vitualmobilityapp",
+    "storage_bucket": "vitualmobilityapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646204392634:android:99c66d57db25a2d1",
+        "android_client_info": {
+          "package_name": "com.example.zye37.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646204392634-7ei9s1mhb659rlail1sqfr7ln642c471.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zye37.capstone",
+            "certificate_hash": "d747119d7e6a630cbbfb912f550da02ff9c8976f"
+          }
+        },
+        {
+          "client_id": "646204392634-jat7af44fnu3666tvg4r5jdaml7cruh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAmJu8nYrrtA2AArwlUzJdP2ieGDcCxsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646204392634-jat7af44fnu3666tvg4r5jdaml7cruh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
