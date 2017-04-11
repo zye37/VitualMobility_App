@@ -14,6 +14,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.support.annotation.NonNull;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -22,6 +28,11 @@ public class Home extends AppCompatActivity
     private Button exercises;
     private Button progress;
     private Button pt;
+    private Button signOut;
+    private FirebaseAuth.AuthStateListener authListener;
+    private FirebaseAuth auth;
+
+
 
     public void clickProfile() {
         profile= (Button) findViewById(R.id.yourProfile);
@@ -76,7 +87,35 @@ public class Home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //get firebase auth instance
+        auth = FirebaseAuth.getInstance();
 
+        //get current user
+        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+        authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user == null) {
+                    // user auth state is changed - user is null
+                    // launch login activity
+                    startActivity(new Intent(Home.this, LoginActivity.class));
+                    finish();
+                }
+            }
+        };
+
+        signOut = (Button) findViewById(R.id.sign_out);
+
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toSignout = new Intent(Home.this,LoginActivity.class );
+                startActivity(toSignout);
+                signOut();
+            }
+        });
         clickProfile();
         clickExercises();
         clickProgress();
@@ -99,6 +138,11 @@ public class Home extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    //sign out method
+    public void signOut() {
+        auth.signOut();
     }
 
     @Override
