@@ -28,6 +28,15 @@
         android:layout_marginTop="420dp"
         android:layout_marginLeft="5dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Today_Update_Button"
+        android:text="Update"
+        android:textSize="20dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="5dp"/>
+
     <ImageButton
         android:layout_width="70dp"
         android:layout_height="60dp"
@@ -100,7 +109,7 @@
                             android:layout_weight="1"
                             android:ems="10"
                             android:inputType="number"
-                            android:text="70"
+                            android:text="0"
                             android:textSize="15dp" />
                     </LinearLayout>
 
@@ -111,7 +120,7 @@
                         android:layout_height="20dp"
                         android:layout_marginTop="5dp"
 
-                        android:progress="70"
+                        android:progress="0"
                         android:progressTint="@color/button_background" />
                 </LinearLayout>
         <LinearLayout
@@ -144,7 +153,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
-                    android:text="40"
+                    android:text="0"
                     android:textSize="15dp" />
             </LinearLayout>
 
@@ -155,7 +164,7 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="5dp"
 
-                android:progress="40"
+                android:progress="0"
                 android:progressTint="@color/button_background" />
         </LinearLayout>
 
@@ -189,7 +198,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
-                    android:text="18"
+                    android:text="0"
                     android:textSize="15dp" />
             </LinearLayout>
 
@@ -200,7 +209,7 @@
                 android:layout_height="20dp"
                 android:layout_marginTop="5dp"
 
-                android:progress="18"
+                android:progress="0"
                 android:progressTint="@color/button_background" />
         </LinearLayout>
 
