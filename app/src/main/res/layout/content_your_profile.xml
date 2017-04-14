@@ -182,6 +182,7 @@
         <Button
             android:id="@+id/btnCreate"
             android:text="@string/Create"
+            android:onClick="Your Profile Created"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

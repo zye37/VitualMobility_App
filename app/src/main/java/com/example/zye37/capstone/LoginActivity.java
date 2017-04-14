@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-    private Button btnlogin,btnSignup;
+    private Button btnlogin, btnSignup;
     private FirebaseAuth auth;
 
 
@@ -118,7 +118,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, Signup.class));
+                startActivity(new Intent(LoginActivity.this, signup.class));
             }
         });
 

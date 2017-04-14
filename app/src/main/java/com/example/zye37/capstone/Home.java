@@ -50,7 +50,7 @@ public class Home extends AppCompatActivity
         exercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toYourExercises = new Intent(Home.this,Activity_YourExercises.class );
+                Intent toYourExercises = new Intent(Home.this, Activity_YourExercises.class);
                 startActivity(toYourExercises);
             }
         });
