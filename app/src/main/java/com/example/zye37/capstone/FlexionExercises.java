@@ -12,6 +12,8 @@ import android.widget.ImageButton;
 
 public class FlexionExercises extends AppCompatActivity {
     private Button standingLumbar;
+    private Button forwardBending;
+    private Button singleKneeChest;
 
     public void clickstandingLumbar() {
         standingLumbar= (Button) findViewById(R.id.StandingLumbar);
@@ -24,6 +26,29 @@ public class FlexionExercises extends AppCompatActivity {
         });
     }
 
+    public void clicksForwardBending() {
+        forwardBending= (Button) findViewById(R.id.ForwardBending);
+        forwardBending.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toForwardBending = new Intent(FlexionExercises.this,ForwardBendingStretches.class );
+                startActivity(toForwardBending);
+            }
+        });
+    }
+
+    public void clicksFSingleChest() {
+        singleKneeChest= (Button) findViewById(R.id.SingleKneeChest);
+        singleKneeChest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toSingleKnee = new Intent(FlexionExercises.this,SingleKneeChest.class );
+                startActivity(toSingleKnee);
+            }
+        });
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +58,8 @@ public class FlexionExercises extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         clickstandingLumbar();
+        clicksForwardBending();
+        clicksFSingleChest();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

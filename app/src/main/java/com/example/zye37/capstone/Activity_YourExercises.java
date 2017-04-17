@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Activity_YourExercises extends AppCompatActivity {
-    private Button flexion;
+    private Button flexion, extension, lateral;
 
     public void clickFlexion() {
         flexion= (Button) findViewById(R.id.Flexion);
@@ -22,6 +22,28 @@ public class Activity_YourExercises extends AppCompatActivity {
             }
         });
     }
+
+    public void clickExtension() {
+        extension= (Button) findViewById(R.id.Extension);
+        extension.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toFlexion = new Intent(Activity_YourExercises.this,extension_exercises.class );
+                startActivity(toFlexion);
+            }
+        });
+    }
+
+    public void clickLateral() {
+        lateral= (Button) findViewById(R.id.LateralFlexion);
+        lateral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toLateral = new Intent(Activity_YourExercises.this,lateral_flexion.class );
+                startActivity(toLateral);
+            }
+        });
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +52,8 @@ public class Activity_YourExercises extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         clickFlexion();
+        clickExtension();
+        clickLateral();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

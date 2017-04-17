@@ -17,12 +17,13 @@
         tools:showIn="@layout/app_bar_home">
 
         <ImageView
-            android:layout_width="50dp"
+            android:id="@+id/VirtualMobility"
+            android:layout_width="100dp"
             android:layout_height="50dp"
-            android:id="@+id/HomeButton"
-            android:src="@drawable/ic_home_black_24dp"
+            android:src="@drawable/virtual_mobility_logo"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="60dp" />
+            android:layout_marginLeft="20dp"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="130dp"
             android:layout_marginTop="60dp"
             android:text="Your PT"
             android:textSize="35dp"

@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.support.annotation.NonNull;
+import android.widget.ImageButton;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -29,10 +30,20 @@ public class Home extends AppCompatActivity
     private Button progress;
     private Button pt;
     private Button signOut;
+    private ImageButton calendar;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
 
-
+    public void clickCalendar() {
+        calendar= (ImageButton) findViewById(R.id.calendar);
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toCalendar = new Intent(Home.this,Calendar.class );
+                startActivity(toCalendar);
+            }
+        });
+    }
 
     public void clickProfile() {
         profile= (Button) findViewById(R.id.yourProfile);
@@ -120,6 +131,7 @@ public class Home extends AppCompatActivity
         clickExercises();
         clickProgress();
         clickPT();
+        clickCalendar();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

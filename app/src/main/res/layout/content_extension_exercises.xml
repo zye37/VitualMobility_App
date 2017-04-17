@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.zye37.capstone.Activity_YourExercises"
+        tools:showIn="@layout/activity__your_exercises">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/IconExercises"
+            android:src="@drawable/your_exercises"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/HomeButton"
+            android:src="@drawable/ic_home_black_24dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginLeft="5dp" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:id="@+id/BackArrow"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginLeft="290dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Thomas's Virtual Mobility"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="YOUR EXERCISES"
+            android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark" />
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/StandingExtension"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Standing Extension"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/FlexionExer_button"
+                android:textColor="@color/button_text"/>
+            <Button
+                android:id="@+id/PressUp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Prone Press-ups"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/FlexionExer_button"
+                android:textColor="@color/button_text"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="More Extension Exercises"
+                android:id="@+id/MoreExtension"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/FlexionExer_button"
+                android:textColor="@color/button_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="225dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/VideoPlay1"
+                android:src="@drawable/video_play"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="70dp"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:id="@+id/TimePlay1"
+                android:src="@drawable/time_play"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="70dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="225dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/VideoPlay2"
+                android:src="@drawable/video_play"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="70dp"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:id="@+id/TimePlay2"
+                android:src="@drawable/time_play"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="70dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+

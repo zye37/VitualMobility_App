@@ -47,9 +47,10 @@ public class TodayReport extends Fragment{
 
 
         //Get Firebase auth instance
+        final DatabaseReference ref = FirebaseDatabase.getInstance().getReference("https://vitualmobilityapp.firebaseio.com");
         auth = FirebaseAuth.getInstance();
-        final DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
         String UID = auth.getCurrentUser().getUid();
+        System.out.println(UID);
         final DatabaseReference userRef = ref.child(UID).child("RecordEntry");
 
 
@@ -60,8 +61,12 @@ public class TodayReport extends Fragment{
                 userRef.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                            RecordEntry entry= (RecordEntry) dataSnapshot.getValue(RecordEntry.class);
-                            System.out.println(entry);
+
+
+                        for(DataSnapshot snapShot : dataSnapshot.getChildren()) {
+                            System.out.println(snapShot.getValue());
+                        }
+
                             flexionProgressNum.setText("40");
                             extensionProgressNum.setText("25");
                             lateralProgressNum.setText("12");

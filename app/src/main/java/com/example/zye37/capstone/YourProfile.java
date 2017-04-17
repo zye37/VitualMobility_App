@@ -63,18 +63,20 @@ public class YourProfile extends AppCompatActivity {
                 Below codes serve only for testing purpose
                 Manually create 10 RecordEntry data points once the user profile is created
                 and manually output data point to the progress report page
+
+                Later should be replaced by real-time data transmitted from bluetooth
                  */
                 RecordEntry[] recordEntries = new RecordEntry[10];
                 recordEntries[0] = new RecordEntry("2017-02-04", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 30.2);
                 recordEntries[1] = new RecordEntry("2017-02-07", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 31.8);
                 recordEntries[2] = new RecordEntry("2017-02-09", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 32.2);
                 recordEntries[3] = new RecordEntry("2017-02-12", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 31.7);
-//                RecordEntry record5 = new RecordEntry("2017-02-15", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 32.6);
-//                RecordEntry record6 = new RecordEntry("2017-02-18", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 32.4);
-//                RecordEntry record7 = new RecordEntry("2017-02-20", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 34.9);
-//                RecordEntry record8 = new RecordEntry("2017-02-23", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 33.7);
-//                RecordEntry record9 = new RecordEntry("2017-02-25", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 35.8);
-//                RecordEntry record10 = new RecordEntry("2017-02-28", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 37.0);
+                recordEntries[4] = new RecordEntry("2017-02-15", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 32.6);
+                recordEntries[5] = new RecordEntry("2017-02-18", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 32.4);
+                recordEntries[6] = new RecordEntry("2017-02-20", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 34.9);
+                recordEntries[7] = new RecordEntry("2017-02-23", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 33.7);
+                recordEntries[8] = new RecordEntry("2017-02-25", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 35.8);
+                recordEntries[9] = new RecordEntry("2017-02-28", ExerciseType.FLEXION, FlexionExercisesType.StandingLumbarFlexion, 37.0);
 
 
                 DatabaseReference userRef = ref.child("patientUser").child(UID).child("RecordEntry"); //.child(record1.getPerformDate());

@@ -64,6 +64,38 @@
         <activity
             android:name=".Signup"
             android:label="@string/title_activity_signup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForwardBendingStretches"
+            android:label="@string/title_activity_forward_bending_stretches"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingleKneeChest"
+            android:label="@string/title_activity_single_knee_chest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calendar"
+            android:label="@string/title_activity_calendar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".extension_exercises"
+            android:label="@string/title_activity_extension_exercises"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lateral_flexion"
+            android:label="@string/title_activity_lateral_flexion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StandingExtension"
+            android:label="@string/title_activity_standing_extension"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PressUp"
+            android:label="@string/title_activity_press_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LateralFlexionStretch"
+            android:label="@string/title_activity_lateral_flexion_stretch"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

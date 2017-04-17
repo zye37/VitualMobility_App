@@ -46,7 +46,7 @@
             android:layout_height="25dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="110dp"
-            android:text="Standing Lumbar Flexion"
+            android:text="Single Knee to Chest Stretch"
             android:textSize="15dp"
             android:background="@color/FlexionExer_button"
             android:textColor="@color/button_text"
@@ -57,9 +57,9 @@
             android:layout_height="270dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="140dp"
-            android:src="@drawable/standing_lumbar_flexion"/>
+            android:src="@drawable/single_kneeto_chest"/>
         <TextView
-            android:id="@+id/timer"
+            android:id="@+id/timer_single"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="420dp"
@@ -67,7 +67,7 @@
             android:text="15"
             android:textSize="30dp"/>
         <Button
-            android:id="@+id/BtnStart"
+            android:id="@+id/BtnStart_single"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="410dp"
@@ -76,7 +76,7 @@
             android:textSize="15dp"/>
 
         <Button
-            android:id="@+id/BtnCancel"
+            android:id="@+id/BtnCancel_single"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="456dp"

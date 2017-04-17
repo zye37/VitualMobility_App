@@ -44,4 +44,12 @@
 
     <!-- Strings related to Profile -->
     <string name="Create">Create</string>
+    <string name="title_activity_forward_bending_stretches">ForwardBendingStretches</string>
+    <string name="title_activity_single_knee_chest">SingleKneeChest</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_extension_exercises">extension_exercises</string>
+    <string name="title_activity_lateral_flexion">lateral_flexion</string>
+    <string name="title_activity_standing_extension">StandingExtension</string>
+    <string name="title_activity_press_up">PressUp</string>
+    <string name="title_activity_lateral_flexion_stretch">LateralFlexionStretch</string>
 </resources>
